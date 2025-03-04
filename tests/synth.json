@@ -1,0 +1,5472 @@
+{
+  "creator": "Yosys 0.42 (git sha1 e9f3fd301, g++ 11.4.0-2ubuntu1~20.04 -fPIC -Os)",
+  "modules": {
+    "top": {
+      "attributes": {
+        "hdlname": "top",
+        "top": "00000000000000000000000000000001",
+        "src": "../led.v:23.1-311.10"
+      },
+      "parameter_default_values": {
+        "CNT_1MS_MAX": "1111100111",
+        "CNT_1S_MAX": "1111100111",
+        "CNT_1US_MAX": "110001",
+        "CNT_MAX": "1100001101001111"
+      },
+      "ports": {
+        "sys_clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "sys_rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "led1": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "led2": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "led3": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "led4": {
+          "direction": "output",
+          "bits": [ 7 ]
+        },
+        "seg_en": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "sign": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "sel": {
+          "direction": "output",
+          "bits": [ 10, 11, 12, 13, 14, 15 ]
+        },
+        "seg": {
+          "direction": "output",
+          "bits": [ 16, 17, 18, 19, 20, 21, 22, 23 ]
+        }
+      },
+      "cells": {
+        "$abc$5675$lut$0\\cnt_1ms[9:0][3]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 24 ],
+            "I1": [ 25 ],
+            "O": [ 26 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms[9:0][5]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 27 ],
+            "I1": [ 25 ],
+            "O": [ 28 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms[9:0][6]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 29 ],
+            "I1": [ 25 ],
+            "O": [ 30 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms[9:0][7]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 31 ],
+            "I1": [ 25 ],
+            "O": [ 32 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms[9:0][8]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 33 ],
+            "I1": [ 25 ],
+            "O": [ 34 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms[9:0][9]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 35 ],
+            "I1": [ 25 ],
+            "O": [ 36 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms_seg[15:0][14]": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "01111111000000001111111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 37 ],
+            "I1": [ 38 ],
+            "I2": [ 39 ],
+            "I3": [ 40 ],
+            "I4": [ 41 ],
+            "O": [ 42 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms_seg[15:0][15]": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "01111111000000001111111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 37 ],
+            "I1": [ 38 ],
+            "I2": [ 39 ],
+            "I3": [ 43 ],
+            "I4": [ 41 ],
+            "O": [ 44 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms_seg[15:0][4]": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:47.26-48.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 45 ],
+            "I1": [ 39 ],
+            "I2": [ 41 ],
+            "O": [ 46 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms_seg[15:0][6]": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "01110000111100001111000011110000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 37 ],
+            "I1": [ 38 ],
+            "I2": [ 47 ],
+            "I3": [ 39 ],
+            "I4": [ 41 ],
+            "O": [ 48 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms_seg[15:0][8]": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "01111111000000001111111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 37 ],
+            "I1": [ 38 ],
+            "I2": [ 39 ],
+            "I3": [ 49 ],
+            "I4": [ 41 ],
+            "O": [ 50 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1ms_seg[15:0][9]": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "01111111000000001111111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 37 ],
+            "I1": [ 38 ],
+            "I2": [ 39 ],
+            "I3": [ 51 ],
+            "I4": [ 41 ],
+            "O": [ 52 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1s[9:0][3]": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:47.26-48.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 25 ],
+            "O": [ 55 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1s[9:0][5]": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:47.26-48.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 56 ],
+            "I1": [ 54 ],
+            "I2": [ 25 ],
+            "O": [ 57 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1s[9:0][6]": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:47.26-48.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 58 ],
+            "I1": [ 54 ],
+            "I2": [ 25 ],
+            "O": [ 59 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1s[9:0][7]": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:47.26-48.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 60 ],
+            "I1": [ 54 ],
+            "I2": [ 25 ],
+            "O": [ 61 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1s[9:0][8]": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:47.26-48.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 62 ],
+            "I1": [ 54 ],
+            "I2": [ 25 ],
+            "O": [ 63 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1s[9:0][9]": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:47.26-48.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 64 ],
+            "I1": [ 54 ],
+            "I2": [ 25 ],
+            "O": [ 65 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1us[5:0][1]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 66 ],
+            "I1": [ 67 ],
+            "O": [ 68 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1us[5:0][4]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 69 ],
+            "I1": [ 67 ],
+            "O": [ 70 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_1us[5:0][5]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 71 ],
+            "I1": [ 67 ],
+            "O": [ 72 ]
+          }
+        },
+        "$abc$5675$lut$0\\cnt_sel[2:0][1]": {
+          "hide_name": 1,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000011111110000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:51.26-53.19"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 73 ],
+            "I1": [ 74 ],
+            "I2": [ 75 ],
+            "I3": [ 76 ],
+            "O": [ 77 ]
+          }
+        },
+        "$abc$5675$lut$0\\flag_1ms[0:0]": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "00100000000000000000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 78 ],
+            "I1": [ 79 ],
+            "I2": [ 38 ],
+            "I3": [ 39 ],
+            "I4": [ 41 ],
+            "O": [ 80 ]
+          }
+        },
+        "$abc$5675$lut$0\\sel_reg[5:0][0]": {
+          "hide_name": 1,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:51.26-53.19"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 73 ],
+            "I1": [ 74 ],
+            "I2": [ 75 ],
+            "I3": [ 76 ],
+            "O": [ 81 ]
+          }
+        },
+        "$abc$5675$lut$0\\sel_reg[5:0][1]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 82 ],
+            "I1": [ 81 ],
+            "O": [ 83 ]
+          }
+        },
+        "$abc$5675$lut$0\\sel_reg[5:0][2]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 84 ],
+            "I1": [ 81 ],
+            "O": [ 85 ]
+          }
+        },
+        "$abc$5675$lut$0\\sel_reg[5:0][3]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 86 ],
+            "I1": [ 81 ],
+            "O": [ 87 ]
+          }
+        },
+        "$abc$5675$lut$0\\sel_reg[5:0][4]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 88 ],
+            "I1": [ 81 ],
+            "O": [ 89 ]
+          }
+        },
+        "$abc$5675$lut$0\\sel_reg[5:0][5]": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 81 ],
+            "O": [ 91 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$285": {
+          "hide_name": 1,
+          "type": "LUT6",
+          "parameters": {
+            "INIT": "0000000000000000010000000000000000000000000000000000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:61.26-63.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 92 ],
+            "I1": [ 93 ],
+            "I2": [ 94 ],
+            "I3": [ 95 ],
+            "I4": [ 96 ],
+            "I5": [ 97 ],
+            "O": [ 98 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$294": {
+          "hide_name": 1,
+          "type": "LUT6",
+          "parameters": {
+            "INIT": "0000000000000000000000000000000001000000000000000000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:61.26-63.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 99 ],
+            "I1": [ 100 ],
+            "I2": [ 101 ],
+            "I3": [ 102 ],
+            "I4": [ 103 ],
+            "I5": [ 104 ],
+            "O": [ 105 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$297": {
+          "hide_name": 1,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000100000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:51.26-53.19"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 106 ],
+            "I1": [ 107 ],
+            "I2": [ 108 ],
+            "I3": [ 105 ],
+            "O": [ 54 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$304": {
+          "hide_name": 1,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000001000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:51.26-53.19"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 109 ],
+            "I1": [ 110 ],
+            "I2": [ 111 ],
+            "I3": [ 112 ],
+            "O": [ 113 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$308": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "00000000000010000000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 114 ],
+            "I1": [ 115 ],
+            "I2": [ 116 ],
+            "I3": [ 117 ],
+            "I4": [ 113 ],
+            "O": [ 41 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$311": {
+          "hide_name": 1,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:51.26-53.19"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 118 ],
+            "I1": [ 119 ],
+            "I2": [ 120 ],
+            "I3": [ 121 ],
+            "O": [ 39 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$312": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 122 ],
+            "I1": [ 123 ],
+            "O": [ 38 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$386": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "10000000111110001110000011111110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 103 ],
+            "I1": [ 124 ],
+            "I2": [ 104 ],
+            "I3": [ 96 ],
+            "I4": [ 97 ],
+            "O": [ 125 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$394": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "10000000110010001110110011111110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 108 ],
+            "I1": [ 101 ],
+            "I2": [ 102 ],
+            "I3": [ 94 ],
+            "I4": [ 95 ],
+            "O": [ 126 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$402": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "10000000110010001110110011111110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 106 ],
+            "I1": [ 107 ],
+            "I2": [ 100 ],
+            "I3": [ 127 ],
+            "I4": [ 128 ],
+            "O": [ 129 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$416": {
+          "hide_name": 1,
+          "type": "LUT6",
+          "parameters": {
+            "INIT": "1000000000100000000010000000001001000000000100000000010000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:61.26-63.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 103 ],
+            "I1": [ 124 ],
+            "I2": [ 104 ],
+            "I3": [ 130 ],
+            "I4": [ 96 ],
+            "I5": [ 97 ],
+            "O": [ 131 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$427": {
+          "hide_name": 1,
+          "type": "LUT6",
+          "parameters": {
+            "INIT": "1000000001000000000010000000010000100000000100000000001000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:61.26-63.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 108 ],
+            "I1": [ 101 ],
+            "I2": [ 102 ],
+            "I3": [ 132 ],
+            "I4": [ 94 ],
+            "I5": [ 95 ],
+            "O": [ 133 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$438": {
+          "hide_name": 1,
+          "type": "LUT6",
+          "parameters": {
+            "INIT": "1000000001000000001000000001000000001000000001000000001000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:61.26-63.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 106 ],
+            "I1": [ 107 ],
+            "I2": [ 100 ],
+            "I3": [ 127 ],
+            "I4": [ 128 ],
+            "I5": [ 93 ],
+            "O": [ 134 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$446": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "01111111000001110001111100000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 103 ],
+            "I1": [ 124 ],
+            "I2": [ 104 ],
+            "I3": [ 96 ],
+            "I4": [ 97 ],
+            "O": [ 135 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$454": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "01111111001101110001001100000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 108 ],
+            "I1": [ 101 ],
+            "I2": [ 102 ],
+            "I3": [ 94 ],
+            "I4": [ 95 ],
+            "O": [ 136 ]
+          }
+        },
+        "$abc$5675$lut$aiger5674$462": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "01111111001101110001001100000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 106 ],
+            "I1": [ 107 ],
+            "I2": [ 100 ],
+            "I3": [ 127 ],
+            "I4": [ 128 ],
+            "O": [ 137 ]
+          }
+        },
+        "$abc$5675$lut$auto$opt_dff.cc:194:make_patterns_logic$1509": {
+          "hide_name": 1,
+          "type": "LUT6",
+          "parameters": {
+            "INIT": "0000000000000000000000000000100000000000000000000000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:61.26-63.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "I5": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 138 ],
+            "I1": [ 139 ],
+            "I2": [ 140 ],
+            "I3": [ 141 ],
+            "I4": [ 142 ],
+            "I5": [ 143 ],
+            "O": [ 67 ]
+          }
+        },
+        "$abc$5675$lut$auto$opt_dff.cc:194:make_patterns_logic$1512": {
+          "hide_name": 1,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "00001000000000000000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:56.26-58.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "I4": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 127 ],
+            "I1": [ 128 ],
+            "I2": [ 132 ],
+            "I3": [ 98 ],
+            "I4": [ 67 ],
+            "O": [ 25 ]
+          }
+        },
+        "$abc$5675$lut$not$aiger5674$115": {
+          "hide_name": 1,
+          "type": "INV",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:36.13-36.48"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 144 ],
+            "O": [ 145 ]
+          }
+        },
+        "$abc$5675$lut$not$aiger5674$116": {
+          "hide_name": 1,
+          "type": "INV",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:36.13-36.48"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 143 ],
+            "O": [ 146 ]
+          }
+        },
+        "$abc$5675$lut$not$aiger5674$14": {
+          "hide_name": 1,
+          "type": "INV",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:36.13-36.48"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 147 ],
+            "O": [ 148 ]
+          }
+        },
+        "$abc$5675$lut$not$aiger5674$156": {
+          "hide_name": 1,
+          "type": "INV",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:36.13-36.48"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 149 ],
+            "O": [ 150 ]
+          }
+        },
+        "$abc$5675$lut$not$aiger5674$95": {
+          "hide_name": 1,
+          "type": "INV",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:36.13-36.48"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 79 ],
+            "O": [ 151 ]
+          }
+        },
+        "$abc$5675$lut$not$aiger5674$97": {
+          "hide_name": 1,
+          "type": "INV",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:36.13-36.48"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 76 ],
+            "O": [ 152 ]
+          }
+        },
+        "$auto$abc9_ops.cc:1569:reintegrate$5677": {
+          "hide_name": 1,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0011010011001100"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:51.26-53.19"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 73 ],
+            "I1": [ 74 ],
+            "I2": [ 75 ],
+            "I3": [ 76 ],
+            "O": [ 153 ]
+          }
+        },
+        "$auto$abc9_ops.cc:1569:reintegrate$5679": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "00011011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:47.26-48.41"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 154 ],
+            "I1": [ 155 ],
+            "I2": [ 156 ],
+            "O": [ 157 ]
+          }
+        },
+        "$auto$abc9_ops.cc:1569:reintegrate$5680": {
+          "hide_name": 1,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 144 ],
+            "I1": [ 149 ],
+            "O": [ 158 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1630.genblk1.slice[0].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:224.25-224.43|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:176.11-184.5"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ "0" ],
+            "CO": [ 159, 37, 160, 161 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "1", "0", "0", "0" ],
+            "O": [ 162, 163, 164, 165 ],
+            "S": [ 151, 78, 123, 122 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1630.genblk1.slice[1].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:224.25-224.43|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:186.14-194.8"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 161 ],
+            "CO": [ 166, 167, 168, 169 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "0", "0", "0", "0" ],
+            "O": [ 45, 170, 47, 171 ],
+            "S": [ 121, 119, 118, 120 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1630.genblk1.slice[2].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:224.25-224.43|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:186.14-194.8"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 169 ],
+            "CO": [ 172, 173, 174, 175 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "0", "0", "0", "0" ],
+            "O": [ 49, 51, 176, 177 ],
+            "S": [ 114, 115, 117, 116 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1630.genblk1.slice[3].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:224.25-224.43|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:186.14-194.8"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 175 ],
+            "CO": [ 178, 179, 180, 181 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "0", "0", "0", "0" ],
+            "O": [ 182, 183, 40, 43 ],
+            "S": [ 111, 110, 109, 112 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1636.genblk1.slice[0].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:69.20-69.32|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:176.11-184.5"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ "0" ],
+            "CO": [ 184, 185, 186, 187 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "1", "0", "0", "0" ],
+            "O": [ 188, 66, 189, 190 ],
+            "S": [ 146, 142, 141, 140 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1636.genblk1.slice[1].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:69.20-69.32|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:186.14-194.8"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 187 ],
+            "CO": [ 191, 192, 193, 194 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "0", "0", "0", "0" ],
+            "O": [ 69, 71, 195, 196 ],
+            "S": [ 138, 139, "0", "0" ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1639.genblk1.slice[0].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:78.20-78.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:176.11-184.5"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ "0" ],
+            "CO": [ 197, 198, 199, 200 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "1", "0", "0", "0" ],
+            "O": [ 201, 202, 92, 24 ],
+            "S": [ 150, 130, 97, 96 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1639.genblk1.slice[1].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:78.20-78.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:186.14-194.8"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 200 ],
+            "CO": [ 203, 204, 205, 206 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "0", "0", "0", "0" ],
+            "O": [ 207, 27, 29, 31 ],
+            "S": [ 132, 94, 95, 93 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1639.genblk1.slice[2].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:78.20-78.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:186.14-194.8"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 206 ],
+            "CO": [ 208, 209, 210, 211 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "0", "0", "0", "0" ],
+            "O": [ 33, 35, 212, 213 ],
+            "S": [ 127, 128, "0", "0" ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1642.genblk1.slice[0].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:89.19-89.32|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:176.11-184.5"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ "0" ],
+            "CO": [ 214, 215, 216, 217 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "1", "0", "0", "0" ],
+            "O": [ 218, 219, 99, 53 ],
+            "S": [ 145, 124, 103, 104 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1642.genblk1.slice[1].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:89.19-89.32|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:186.14-194.8"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 217 ],
+            "CO": [ 220, 221, 222, 223 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "0", "0", "0", "0" ],
+            "O": [ 224, 56, 58, 60 ],
+            "S": [ 108, 102, 101, 100 ]
+          }
+        },
+        "$auto$alumacc.cc:485:replace_alu$1642.genblk1.slice[2].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:89.19-89.32|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:186.14-194.8"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ 223 ],
+            "CO": [ 225, 226, 227, 228 ],
+            "CYINIT": [ "0" ],
+            "DI": [ "0", "0", "0", "0" ],
+            "O": [ 62, 64, 229, 230 ],
+            "S": [ 106, 107, "0", "0" ]
+          }
+        },
+        "$auto$clkbufmap.cc:307:execute$5818": {
+          "hide_name": 1,
+          "type": "BUFG",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 231 ],
+            "O": [ 232 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2237": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 150 ],
+            "Q": [ 149 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2238": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 202 ],
+            "Q": [ 130 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2239": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 92 ],
+            "Q": [ 97 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2240": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 26 ],
+            "Q": [ 96 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2241": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 207 ],
+            "Q": [ 132 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2242": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 28 ],
+            "Q": [ 94 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2243": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 30 ],
+            "Q": [ 95 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2244": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 32 ],
+            "Q": [ 93 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2245": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 34 ],
+            "Q": [ 127 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2246": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 67 ],
+            "CLR": [ 148 ],
+            "D": [ 36 ],
+            "Q": [ 128 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2518": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:305.1-309.25|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 82 ],
+            "Q": [ 233 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2519": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:305.1-309.25|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 84 ],
+            "Q": [ 234 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2520": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:305.1-309.25|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 86 ],
+            "Q": [ 235 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2521": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:305.1-309.25|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 88 ],
+            "Q": [ 236 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2522": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:305.1-309.25|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 90 ],
+            "Q": [ 237 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2523": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:305.1-309.25|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 238 ],
+            "Q": [ 239 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2524": {
+          "hide_name": 1,
+          "type": "FDPE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:284.1-302.16|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:42.41-42.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "D": "input",
+            "PRE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "D": [ "0" ],
+            "PRE": [ 148 ],
+            "Q": [ 240 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2531": {
+          "hide_name": 1,
+          "type": "FDPE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:284.1-302.16|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:42.41-42.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "D": "input",
+            "PRE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "D": [ 241 ],
+            "PRE": [ 148 ],
+            "Q": [ 242 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2532": {
+          "hide_name": 1,
+          "type": "FDPE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:275.1-281.34|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:42.41-42.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "D": "input",
+            "PRE": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "D": [ "0" ],
+            "PRE": [ 148 ],
+            "Q": [ 241 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2537": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 81 ],
+            "Q": [ 82 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2538": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 83 ],
+            "Q": [ 84 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2539": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 85 ],
+            "Q": [ 86 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2540": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 87 ],
+            "Q": [ 88 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2541": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 89 ],
+            "Q": [ 90 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2542": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 91 ],
+            "Q": [ 238 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2543": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:227.1-233.30|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 80 ],
+            "Q": [ 73 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2544": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 151 ],
+            "Q": [ 79 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2545": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 163 ],
+            "Q": [ 78 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2546": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 164 ],
+            "Q": [ 123 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2547": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 165 ],
+            "Q": [ 122 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2548": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 46 ],
+            "Q": [ 121 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2549": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 170 ],
+            "Q": [ 119 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2550": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 48 ],
+            "Q": [ 118 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2551": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 171 ],
+            "Q": [ 120 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2552": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 50 ],
+            "Q": [ 114 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2553": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 52 ],
+            "Q": [ 115 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2554": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 176 ],
+            "Q": [ 117 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2555": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 177 ],
+            "Q": [ 116 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2556": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 182 ],
+            "Q": [ 111 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2557": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 183 ],
+            "Q": [ 110 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2558": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 42 ],
+            "Q": [ 109 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2559": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 44 ],
+            "Q": [ 112 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2560": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:131.1-155.16|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 243 ],
+            "Q": [ 244 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2561": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:131.1-155.16|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 245 ],
+            "Q": [ 246 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2562": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:236.1-244.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 152 ],
+            "Q": [ 76 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2563": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:236.1-244.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 77 ],
+            "Q": [ 75 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2564": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:236.1-244.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 73 ],
+            "CLR": [ 148 ],
+            "D": [ 153 ],
+            "Q": [ 74 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2565": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:109.1-116.22|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 157 ],
+            "Q": [ 247 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2566": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:102.1-106.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 154 ],
+            "Q": [ 248 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2567": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:120.1-129.30|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 249 ],
+            "Q": [ 245 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2568": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:120.1-129.30|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 250 ],
+            "Q": [ 243 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2569": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:94.1-98.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 251 ],
+            "Q": [ 154 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2570": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 145 ],
+            "Q": [ 144 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2571": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 219 ],
+            "Q": [ 124 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2572": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 99 ],
+            "Q": [ 103 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2573": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 55 ],
+            "Q": [ 104 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2574": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 224 ],
+            "Q": [ 108 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2575": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 57 ],
+            "Q": [ 102 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2576": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 59 ],
+            "Q": [ 101 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2577": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 61 ],
+            "Q": [ 100 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2578": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 63 ],
+            "Q": [ 106 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2579": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ 25 ],
+            "CLR": [ 148 ],
+            "D": [ 65 ],
+            "Q": [ 107 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2580": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 146 ],
+            "Q": [ 143 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2581": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 68 ],
+            "Q": [ 142 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2582": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 189 ],
+            "Q": [ 141 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2583": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 190 ],
+            "Q": [ 140 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2584": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 70 ],
+            "Q": [ 138 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$2585": {
+          "hide_name": 1,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "x"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97"
+          },
+          "port_directions": {
+            "C": "input",
+            "CE": "input",
+            "CLR": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 232 ],
+            "CE": [ "1" ],
+            "CLR": [ 148 ],
+            "D": [ 72 ],
+            "Q": [ 139 ]
+          }
+        },
+        "$auto$xilinx_dffopt.cc:336:execute$5812": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "01111000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:36.13-36.48"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 25 ],
+            "I1": [ 54 ],
+            "I2": [ 245 ],
+            "O": [ 249 ]
+          }
+        },
+        "$auto$xilinx_dffopt.cc:336:execute$5816": {
+          "hide_name": 1,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "01111000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:36.13-36.48"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 25 ],
+            "I1": [ 54 ],
+            "I2": [ 154 ],
+            "O": [ 251 ]
+          }
+        },
+        "$auto$xilinx_dffopt.cc:339:execute$5814": {
+          "hide_name": 1,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0111111110000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:43.26-44.30"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 25 ],
+            "I1": [ 54 ],
+            "I2": [ 245 ],
+            "I3": [ 243 ],
+            "O": [ 250 ]
+          }
+        },
+        "$gt$../led.v:113$1135.genblk1.slice[0].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:113.51-113.67|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:46.13-46.74|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:125.21-125.104|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:90.17-90.86|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:122.21-122.74|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:77.35-77.85|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:70.11-77.5"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ "0" ],
+            "CO": [ 252, 253, 254, 155 ],
+            "CYINIT": [ "0" ],
+            "DI": [ 145, 135, 136, 137 ],
+            "O": [ 255, 256, 257, 258 ],
+            "S": [ 158, 131, 133, 134 ]
+          }
+        },
+        "$iopadmap$top.led1": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 248 ],
+            "O": [ 4 ]
+          }
+        },
+        "$iopadmap$top.led2": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 247 ],
+            "O": [ 5 ]
+          }
+        },
+        "$iopadmap$top.led3": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 244 ],
+            "O": [ 6 ]
+          }
+        },
+        "$iopadmap$top.led4": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 246 ],
+            "O": [ 7 ]
+          }
+        },
+        "$iopadmap$top.seg": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 240 ],
+            "O": [ 16 ]
+          }
+        },
+        "$iopadmap$top.seg_1": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 240 ],
+            "O": [ 17 ]
+          }
+        },
+        "$iopadmap$top.seg_2": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 240 ],
+            "O": [ 18 ]
+          }
+        },
+        "$iopadmap$top.seg_3": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 240 ],
+            "O": [ 19 ]
+          }
+        },
+        "$iopadmap$top.seg_4": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 240 ],
+            "O": [ 20 ]
+          }
+        },
+        "$iopadmap$top.seg_5": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 240 ],
+            "O": [ 21 ]
+          }
+        },
+        "$iopadmap$top.seg_6": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ "1" ],
+            "O": [ 22 ]
+          }
+        },
+        "$iopadmap$top.seg_7": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 242 ],
+            "O": [ 23 ]
+          }
+        },
+        "$iopadmap$top.seg_en": {
+          "hide_name": 1,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 8 ],
+            "O": [ 259 ]
+          }
+        },
+        "$iopadmap$top.sel": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 233 ],
+            "O": [ 10 ]
+          }
+        },
+        "$iopadmap$top.sel_1": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 234 ],
+            "O": [ 11 ]
+          }
+        },
+        "$iopadmap$top.sel_2": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 235 ],
+            "O": [ 12 ]
+          }
+        },
+        "$iopadmap$top.sel_3": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 236 ],
+            "O": [ 13 ]
+          }
+        },
+        "$iopadmap$top.sel_4": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 237 ],
+            "O": [ 14 ]
+          }
+        },
+        "$iopadmap$top.sel_5": {
+          "hide_name": 1,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 239 ],
+            "O": [ 15 ]
+          }
+        },
+        "$iopadmap$top.sign": {
+          "hide_name": 1,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 9 ],
+            "O": [ 260 ]
+          }
+        },
+        "$iopadmap$top.sys_clk": {
+          "hide_name": 1,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 231 ]
+          }
+        },
+        "$iopadmap$top.sys_rst_n": {
+          "hide_name": 1,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I": [ 3 ],
+            "O": [ 147 ]
+          }
+        },
+        "$lt$../led.v:112$1132.genblk1.slice[0].genblk1.carry4": {
+          "hide_name": 1,
+          "type": "CARRY4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../led.v:112.38-112.54|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:29.114-29.153|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:46.13-46.74|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:125.21-125.104|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:90.17-90.86|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:122.21-122.74|/home/zhaoshuai/install/yosys/bin/../share/yosys/cmp2lcu.v:77.35-77.85|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/arith_map.v:70.11-77.5"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "CYINIT": "input",
+            "DI": "input",
+            "O": "output",
+            "S": "input"
+          },
+          "connections": {
+            "CI": [ "0" ],
+            "CO": [ 261, 262, 263, 156 ],
+            "CYINIT": [ "0" ],
+            "DI": [ 144, 125, 126, 129 ],
+            "O": [ 264, 265, 266, 267 ],
+            "S": [ 158, 131, 133, 134 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$5675$aiger5674$100": {
+          "hide_name": 1,
+          "bits": [ 266 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$101": {
+          "hide_name": 1,
+          "bits": [ 267 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$102": {
+          "hide_name": 1,
+          "bits": [ 261 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$103": {
+          "hide_name": 1,
+          "bits": [ 262 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$104": {
+          "hide_name": 1,
+          "bits": [ 263 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$106": {
+          "hide_name": 1,
+          "bits": [ 255 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$107": {
+          "hide_name": 1,
+          "bits": [ 256 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$108": {
+          "hide_name": 1,
+          "bits": [ 257 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$109": {
+          "hide_name": 1,
+          "bits": [ 258 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$110": {
+          "hide_name": 1,
+          "bits": [ 252 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$111": {
+          "hide_name": 1,
+          "bits": [ 253 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$112": {
+          "hide_name": 1,
+          "bits": [ 254 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$127": {
+          "hide_name": 1,
+          "bits": [ 201 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$131": {
+          "hide_name": 1,
+          "bits": [ 197 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$132": {
+          "hide_name": 1,
+          "bits": [ 198 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$133": {
+          "hide_name": 1,
+          "bits": [ 199 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$134": {
+          "hide_name": 1,
+          "bits": [ 200 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$143": {
+          "hide_name": 1,
+          "bits": [ 218 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$147": {
+          "hide_name": 1,
+          "bits": [ 214 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$148": {
+          "hide_name": 1,
+          "bits": [ 215 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$149": {
+          "hide_name": 1,
+          "bits": [ 216 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$150": {
+          "hide_name": 1,
+          "bits": [ 217 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$179": {
+          "hide_name": 1,
+          "bits": [ 188 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$183": {
+          "hide_name": 1,
+          "bits": [ 184 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$184": {
+          "hide_name": 1,
+          "bits": [ 185 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$185": {
+          "hide_name": 1,
+          "bits": [ 186 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$186": {
+          "hide_name": 1,
+          "bits": [ 187 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$187": {
+          "hide_name": 1,
+          "bits": [ 162 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$191": {
+          "hide_name": 1,
+          "bits": [ 159 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$193": {
+          "hide_name": 1,
+          "bits": [ 160 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$194": {
+          "hide_name": 1,
+          "bits": [ 161 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$204": {
+          "hide_name": 1,
+          "bits": [ 195 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$205": {
+          "hide_name": 1,
+          "bits": [ 196 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$206": {
+          "hide_name": 1,
+          "bits": [ 191 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$207": {
+          "hide_name": 1,
+          "bits": [ 192 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$208": {
+          "hide_name": 1,
+          "bits": [ 193 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$209": {
+          "hide_name": 1,
+          "bits": [ 194 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$214": {
+          "hide_name": 1,
+          "bits": [ 203 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$215": {
+          "hide_name": 1,
+          "bits": [ 204 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$216": {
+          "hide_name": 1,
+          "bits": [ 205 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$217": {
+          "hide_name": 1,
+          "bits": [ 206 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$223": {
+          "hide_name": 1,
+          "bits": [ 166 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$224": {
+          "hide_name": 1,
+          "bits": [ 167 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$225": {
+          "hide_name": 1,
+          "bits": [ 168 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$226": {
+          "hide_name": 1,
+          "bits": [ 169 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$231": {
+          "hide_name": 1,
+          "bits": [ 220 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$232": {
+          "hide_name": 1,
+          "bits": [ 221 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$233": {
+          "hide_name": 1,
+          "bits": [ 222 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$234": {
+          "hide_name": 1,
+          "bits": [ 223 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$243": {
+          "hide_name": 1,
+          "bits": [ 172 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$244": {
+          "hide_name": 1,
+          "bits": [ 173 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$245": {
+          "hide_name": 1,
+          "bits": [ 174 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$246": {
+          "hide_name": 1,
+          "bits": [ 175 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$249": {
+          "hide_name": 1,
+          "bits": [ 212 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$250": {
+          "hide_name": 1,
+          "bits": [ 213 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$251": {
+          "hide_name": 1,
+          "bits": [ 208 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$252": {
+          "hide_name": 1,
+          "bits": [ 209 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$253": {
+          "hide_name": 1,
+          "bits": [ 210 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$254": {
+          "hide_name": 1,
+          "bits": [ 211 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$257": {
+          "hide_name": 1,
+          "bits": [ 229 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$258": {
+          "hide_name": 1,
+          "bits": [ 230 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$259": {
+          "hide_name": 1,
+          "bits": [ 225 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$260": {
+          "hide_name": 1,
+          "bits": [ 226 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$261": {
+          "hide_name": 1,
+          "bits": [ 227 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$262": {
+          "hide_name": 1,
+          "bits": [ 228 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$267": {
+          "hide_name": 1,
+          "bits": [ 178 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$268": {
+          "hide_name": 1,
+          "bits": [ 179 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$269": {
+          "hide_name": 1,
+          "bits": [ 180 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$270": {
+          "hide_name": 1,
+          "bits": [ 181 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$386": {
+          "hide_name": 1,
+          "bits": [ 125 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$394": {
+          "hide_name": 1,
+          "bits": [ 126 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$402": {
+          "hide_name": 1,
+          "bits": [ 129 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$405b": {
+          "hide_name": 1,
+          "bits": [ 158 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$416": {
+          "hide_name": 1,
+          "bits": [ 131 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$427": {
+          "hide_name": 1,
+          "bits": [ 133 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$438": {
+          "hide_name": 1,
+          "bits": [ 134 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$446": {
+          "hide_name": 1,
+          "bits": [ 135 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$454": {
+          "hide_name": 1,
+          "bits": [ 136 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$462": {
+          "hide_name": 1,
+          "bits": [ 137 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$aiger5674$98": {
+          "hide_name": 1,
+          "bits": [ 264 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$aiger5674$99": {
+          "hide_name": 1,
+          "bits": [ 265 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$abc$5675$iopadmap$led1": {
+          "hide_name": 1,
+          "bits": [ 248 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$iopadmap$led2": {
+          "hide_name": 1,
+          "bits": [ 247 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$iopadmap$led3": {
+          "hide_name": 1,
+          "bits": [ 244 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$iopadmap$led4": {
+          "hide_name": 1,
+          "bits": [ 246 ],
+          "attributes": {
+          }
+        },
+        "$abc$5675$iopadmap$seg": {
+          "hide_name": 1,
+          "bits": [ 240, "1", 242 ],
+          "offset": 5,
+          "attributes": {
+          }
+        },
+        "$abc$5675$iopadmap$sel": {
+          "hide_name": 1,
+          "bits": [ 233, 234, 235, 236, 237, 239 ],
+          "attributes": {
+          }
+        },
+        "$auto$clkbufmap.cc:308:execute$5819": {
+          "hide_name": 1,
+          "bits": [ 231 ],
+          "attributes": {
+          }
+        },
+        "$auto$xilinx_dffopt.cc:351:execute$5813": {
+          "hide_name": 1,
+          "bits": [ 249 ],
+          "attributes": {
+          }
+        },
+        "$auto$xilinx_dffopt.cc:351:execute$5815": {
+          "hide_name": 1,
+          "bits": [ 250 ],
+          "attributes": {
+          }
+        },
+        "$auto$xilinx_dffopt.cc:351:execute$5817": {
+          "hide_name": 1,
+          "bits": [ 251 ],
+          "attributes": {
+          }
+        },
+        "$iopadmap$seg_en": {
+          "hide_name": 1,
+          "bits": [ 259 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$iopadmap$sign": {
+          "hide_name": 1,
+          "bits": [ 260 ],
+          "attributes": {
+            "unused_bits": "0 "
+          }
+        },
+        "$techmap$techmap3947$auto$ff.cc:266:slice$2243.$auto$abc9_ops.cc:418:prep_bypass$3866.CLR": {
+          "hide_name": 1,
+          "bits": [ 148 ],
+          "attributes": {
+            "invertible_pin": "IS_CLR_INVERTED",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:684.9-684.12"
+          }
+        },
+        "$techmap3947$auto$ff.cc:266:slice$2243.C": {
+          "hide_name": 1,
+          "bits": [ 232 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "invertible_pin": "IS_C_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:681.9-681.10"
+          }
+        },
+        "$techmap3947$auto$ff.cc:266:slice$2243.D": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3948$auto$ff.cc:266:slice$2239.D": {
+          "hide_name": 1,
+          "bits": [ 92 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3949$auto$ff.cc:266:slice$2246.D": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3950$auto$ff.cc:266:slice$2242.D": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3951$auto$ff.cc:266:slice$2244.D": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3952$auto$ff.cc:266:slice$2240.D": {
+          "hide_name": 1,
+          "bits": [ 26 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3953$auto$ff.cc:266:slice$2237.D": {
+          "hide_name": 1,
+          "bits": [ 150 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3954$auto$ff.cc:266:slice$2241.D": {
+          "hide_name": 1,
+          "bits": [ 207 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3955$auto$ff.cc:266:slice$2573.D": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3956$auto$ff.cc:266:slice$2554.D": {
+          "hide_name": 1,
+          "bits": [ 176 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3957$auto$ff.cc:266:slice$2537.D": {
+          "hide_name": 1,
+          "bits": [ 81 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3958$auto$ff.cc:266:slice$2238.D": {
+          "hide_name": 1,
+          "bits": [ 202 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3959$auto$ff.cc:266:slice$2585.D": {
+          "hide_name": 1,
+          "bits": [ 72 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3961$auto$ff.cc:266:slice$2245.D": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:72.1-80.27|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3962$auto$ff.cc:266:slice$2546.D": {
+          "hide_name": 1,
+          "bits": [ 164 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3963$auto$ff.cc:266:slice$2545.D": {
+          "hide_name": 1,
+          "bits": [ 163 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3964$auto$ff.cc:266:slice$2543.D": {
+          "hide_name": 1,
+          "bits": [ 80 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:227.1-233.30|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3967$auto$ff.cc:266:slice$2542.D": {
+          "hide_name": 1,
+          "bits": [ 91 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3969$auto$ff.cc:266:slice$2541.D": {
+          "hide_name": 1,
+          "bits": [ 89 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3971$auto$ff.cc:266:slice$2547.D": {
+          "hide_name": 1,
+          "bits": [ 165 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3972$auto$ff.cc:266:slice$2540.D": {
+          "hide_name": 1,
+          "bits": [ 87 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3974$auto$ff.cc:266:slice$2548.D": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3975$auto$ff.cc:266:slice$2551.D": {
+          "hide_name": 1,
+          "bits": [ 171 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3976$auto$ff.cc:266:slice$2584.D": {
+          "hide_name": 1,
+          "bits": [ 70 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3977$auto$ff.cc:266:slice$2539.D": {
+          "hide_name": 1,
+          "bits": [ 85 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3979$auto$ff.cc:266:slice$2549.D": {
+          "hide_name": 1,
+          "bits": [ 170 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3980$auto$ff.cc:266:slice$2550.D": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3981$auto$ff.cc:266:slice$2563.D": {
+          "hide_name": 1,
+          "bits": [ 77 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:236.1-244.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3983$auto$ff.cc:266:slice$2538.D": {
+          "hide_name": 1,
+          "bits": [ 83 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:247.1-255.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3985$auto$ff.cc:266:slice$2575.D": {
+          "hide_name": 1,
+          "bits": [ 57 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3986$auto$ff.cc:266:slice$2559.D": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3987$auto$ff.cc:266:slice$2576.D": {
+          "hide_name": 1,
+          "bits": [ 59 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3988$auto$ff.cc:266:slice$2577.D": {
+          "hide_name": 1,
+          "bits": [ 61 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3989$auto$ff.cc:266:slice$2581.D": {
+          "hide_name": 1,
+          "bits": [ 68 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3990$auto$ff.cc:266:slice$2582.D": {
+          "hide_name": 1,
+          "bits": [ 189 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3991$auto$ff.cc:266:slice$2571.D": {
+          "hide_name": 1,
+          "bits": [ 219 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3992$auto$ff.cc:266:slice$2580.D": {
+          "hide_name": 1,
+          "bits": [ 146 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3993$auto$ff.cc:266:slice$2570.D": {
+          "hide_name": 1,
+          "bits": [ 145 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3997$auto$ff.cc:266:slice$2579.D": {
+          "hide_name": 1,
+          "bits": [ 65 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3998$auto$ff.cc:266:slice$2565.D": {
+          "hide_name": 1,
+          "bits": [ 157 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:109.1-116.22|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap3999$auto$ff.cc:266:slice$2556.D": {
+          "hide_name": 1,
+          "bits": [ 182 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4000$auto$ff.cc:266:slice$2562.D": {
+          "hide_name": 1,
+          "bits": [ 152 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:236.1-244.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4001$auto$ff.cc:266:slice$2555.D": {
+          "hide_name": 1,
+          "bits": [ 177 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4002$auto$ff.cc:266:slice$2557.D": {
+          "hide_name": 1,
+          "bits": [ 183 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4003$auto$ff.cc:266:slice$2561.D": {
+          "hide_name": 1,
+          "bits": [ 245 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:131.1-155.16|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4004$auto$ff.cc:266:slice$2558.D": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4005$auto$ff.cc:266:slice$2553.D": {
+          "hide_name": 1,
+          "bits": [ 52 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4006$auto$ff.cc:266:slice$2552.D": {
+          "hide_name": 1,
+          "bits": [ 50 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4007$auto$ff.cc:266:slice$2583.D": {
+          "hide_name": 1,
+          "bits": [ 190 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:63.1-69.33|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4008$auto$ff.cc:266:slice$2560.D": {
+          "hide_name": 1,
+          "bits": [ 243 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:131.1-155.16|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4009$auto$ff.cc:266:slice$2544.D": {
+          "hide_name": 1,
+          "bits": [ 151 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:218.1-224.44|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4010$auto$ff.cc:266:slice$2574.D": {
+          "hide_name": 1,
+          "bits": [ 224 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4011$auto$ff.cc:266:slice$2578.D": {
+          "hide_name": 1,
+          "bits": [ 63 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4013$auto$ff.cc:266:slice$2572.D": {
+          "hide_name": 1,
+          "bits": [ 99 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:83.1-91.26|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap4014$auto$ff.cc:266:slice$2564.D": {
+          "hide_name": 1,
+          "bits": [ 153 ],
+          "attributes": {
+            "invertible_pin": "IS_D_INVERTED",
+            "src": "../led.v:236.1-244.29|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/ff_map.v:31.41-31.97|/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/cells_sim.v:686.9-686.10"
+          }
+        },
+        "$techmap5753$abc$5675$lut$aiger5674$454.A": {
+          "hide_name": 1,
+          "bits": [ 108, 101, 102, 94, 95 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5754$abc$5675$lut$aiger5674$446.A": {
+          "hide_name": 1,
+          "bits": [ 103, 124, 104, 96, 97 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5755$abc$5675$lut$aiger5674$438.A": {
+          "hide_name": 1,
+          "bits": [ 106, 107, 100, 127, 128, 93 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5756$abc$5675$lut$aiger5674$416.A": {
+          "hide_name": 1,
+          "bits": [ 103, 124, 104, 130, 96, 97 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5758$abc$5675$lut$aiger5674$312.A": {
+          "hide_name": 1,
+          "bits": [ 122, 123 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5759$abc$5675$lut$aiger5674$304.A": {
+          "hide_name": 1,
+          "bits": [ 109, 110, 111, 112 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5760$abc$5675$lut$aiger5674$308.A": {
+          "hide_name": 1,
+          "bits": [ 114, 115, 116, 117, 113 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5761$abc$5675$lut$aiger5674$311.A": {
+          "hide_name": 1,
+          "bits": [ 118, 119, 120, 121 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5762$abc$5675$lut$0\\cnt_1ms_seg[15:0][14].A": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 40, 41 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5764$abc$5675$lut$auto$opt_dff.cc:194:make_patterns_logic$1509.A": {
+          "hide_name": 1,
+          "bits": [ 138, 139, 140, 141, 142, 143 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5765$abc$5675$lut$auto$opt_dff.cc:194:make_patterns_logic$1512.A": {
+          "hide_name": 1,
+          "bits": [ 127, 128, 132, 98, 67 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5766$abc$5675$lut$0\\cnt_1ms[9:0][9].A": {
+          "hide_name": 1,
+          "bits": [ 35, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5768$abc$5675$lut$aiger5674$297.A": {
+          "hide_name": 1,
+          "bits": [ 106, 107, 108, 105 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5769$abc$5675$lut$0\\cnt_1s[9:0][9].A": {
+          "hide_name": 1,
+          "bits": [ 64, 54, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5770$abc$5675$lut$0\\cnt_1ms_seg[15:0][9].A": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 51, 41 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5771$abc$5675$lut$0\\cnt_1s[9:0][8].A": {
+          "hide_name": 1,
+          "bits": [ 62, 54, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5772$abc$5675$lut$0\\cnt_1ms[9:0][7].A": {
+          "hide_name": 1,
+          "bits": [ 31, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5773$abc$5675$lut$0\\cnt_1s[9:0][7].A": {
+          "hide_name": 1,
+          "bits": [ 60, 54, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5774$abc$5675$lut$0\\cnt_1ms_seg[15:0][6].A": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 47, 39, 41 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5775$abc$5675$lut$0\\cnt_1s[9:0][5].A": {
+          "hide_name": 1,
+          "bits": [ 56, 54, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5776$abc$5675$lut$0\\sel_reg[5:0][0].A": {
+          "hide_name": 1,
+          "bits": [ 73, 74, 75, 76 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5778$abc$5675$lut$0\\cnt_1ms[9:0][5].A": {
+          "hide_name": 1,
+          "bits": [ 27, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5779$abc$5675$lut$0\\cnt_1ms_seg[15:0][4].A": {
+          "hide_name": 1,
+          "bits": [ 45, 39, 41 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5781$abc$5675$lut$0\\cnt_1s[9:0][3].A": {
+          "hide_name": 1,
+          "bits": [ 53, 54, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5786$abc$5675$lut$0\\cnt_1us[5:0][1].A": {
+          "hide_name": 1,
+          "bits": [ 66, 67 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5787$abc$5675$lut$0\\flag_1ms[0:0].A": {
+          "hide_name": 1,
+          "bits": [ 78, 79, 38, 39, 41 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5795$abc$5675$lut$not$aiger5674$156.A": {
+          "hide_name": 1,
+          "bits": [ 149 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5796$abc$5675$lut$not$aiger5674$14.A": {
+          "hide_name": 1,
+          "bits": [ 147 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5798$abc$5675$lut$0\\cnt_1ms[9:0][3].A": {
+          "hide_name": 1,
+          "bits": [ 24, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5799$abc$5675$lut$0\\cnt_1us[5:0][4].A": {
+          "hide_name": 1,
+          "bits": [ 69, 67 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5800$abc$5675$lut$0\\cnt_1us[5:0][5].A": {
+          "hide_name": 1,
+          "bits": [ 71, 67 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5801$abc$5675$lut$0\\cnt_1ms[9:0][6].A": {
+          "hide_name": 1,
+          "bits": [ 29, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5802$abc$5675$lut$0\\cnt_1s[9:0][6].A": {
+          "hide_name": 1,
+          "bits": [ 58, 54, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5803$abc$5675$lut$0\\cnt_1ms_seg[15:0][8].A": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 49, 41 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5804$abc$5675$lut$0\\cnt_1ms[9:0][8].A": {
+          "hide_name": 1,
+          "bits": [ 33, 25 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5805$abc$5675$lut$0\\cnt_1ms_seg[15:0][15].A": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 43, 41 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5809$abc$5675$lut$not$aiger5674$115.A": {
+          "hide_name": 1,
+          "bits": [ 144 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "$techmap5810$auto$abc9_ops.cc:1569:reintegrate$5679.A": {
+          "hide_name": 1,
+          "bits": [ 154, 155, 156 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/zhaoshuai/install/yosys/bin/../share/yosys/xilinx/lut_map.v:30.21-30.22"
+          }
+        },
+        "cnt_1s_en": {
+          "hide_name": 0,
+          "bits": [ 154 ],
+          "attributes": {
+            "src": "../led.v:53.13-53.22"
+          }
+        },
+        "data": {
+          "hide_name": 0,
+          "bits": [ "1", "1", "1", "0", "0", "1", "1", "1", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "../led.v:55.13-55.17"
+          }
+        },
+        "data_disp": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "../led.v:175.17-175.26"
+          }
+        },
+        "data_reg": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "../led.v:170.17-170.25"
+          }
+        },
+        "dot_disp": {
+          "hide_name": 0,
+          "bits": [ 241 ],
+          "attributes": {
+            "src": "../led.v:176.17-176.25"
+          }
+        },
+        "flag_1ms": {
+          "hide_name": 0,
+          "bits": [ 73 ],
+          "attributes": {
+            "src": "../led.v:172.17-172.25"
+          }
+        },
+        "h_hun": {
+          "hide_name": 0,
+          "bits": [ "x", "x", "x", "x" ],
+          "attributes": {
+            "src": "../led.v:167.17-167.22"
+          }
+        },
+        "hun": {
+          "hide_name": 0,
+          "bits": [ "x", "x", "x", "x" ],
+          "attributes": {
+            "src": "../led.v:164.17-164.20"
+          }
+        },
+        "led1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../led.v:35.22-35.26"
+          }
+        },
+        "led2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../led.v:36.22-36.26"
+          }
+        },
+        "led3": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../led.v:37.22-37.26"
+          }
+        },
+        "led4": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../led.v:38.22-38.26"
+          }
+        },
+        "point": {
+          "hide_name": 0,
+          "bits": [ "1", "1", "1", "1", "1", "1" ],
+          "attributes": {
+            "src": "../led.v:56.17-56.22"
+          }
+        },
+        "seg": {
+          "hide_name": 0,
+          "bits": [ 16, 17, 18, 19, 20, 21, 22, 23 ],
+          "attributes": {
+            "src": "../led.v:45.29-45.32"
+          }
+        },
+        "seg_en": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../led.v:42.29-42.35"
+          }
+        },
+        "sel": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14, 15 ],
+          "attributes": {
+            "src": "../led.v:44.29-44.32"
+          }
+        },
+        "sel_reg": {
+          "hide_name": 0,
+          "bits": [ 82, 84, 86, 88, 90, 238 ],
+          "attributes": {
+            "src": "../led.v:174.17-174.24"
+          }
+        },
+        "sign": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "../led.v:43.29-43.33"
+          }
+        },
+        "sys_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../led.v:32.21-32.28"
+          }
+        },
+        "sys_rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../led.v:33.21-33.30"
+          }
+        },
+        "t_tho": {
+          "hide_name": 0,
+          "bits": [ "x", "x", "x", "x" ],
+          "attributes": {
+            "src": "../led.v:166.17-166.22"
+          }
+        },
+        "ten": {
+          "hide_name": 0,
+          "bits": [ "x", "x", "x", "x" ],
+          "attributes": {
+            "src": "../led.v:163.17-163.20"
+          }
+        },
+        "tho": {
+          "hide_name": 0,
+          "bits": [ "x", "x", "x", "x" ],
+          "attributes": {
+            "src": "../led.v:165.17-165.20"
+          }
+        },
+        "unit": {
+          "hide_name": 0,
+          "bits": [ "x", "x", "x", "x" ],
+          "attributes": {
+            "src": "../led.v:162.17-162.21"
+          }
+        }
+      }
+    }
+  }
+}
